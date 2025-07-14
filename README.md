@@ -40,7 +40,9 @@ Projeto desenvolvido durante o evento **NLW (Next Level Week)** da Rocketseat, f
 
 - **Criação de Salas** - Interface para criar salas de perguntas
 - **Listagem de Salas** - Visualização de todas as salas criadas
-- **Sistema de Perguntas** - Formulário para enviar perguntas
+- **Sistema de Perguntas** - Formulário para enviar perguntas e receber respostas automáticas da IA
+- **Listagem dinâmica de perguntas** - Perguntas e respostas exibidas em tempo real por sala
+- **Gravação e envio de áudio** - Grave e envie áudios para a sala, integrando com o backend
 - **Navegação entre Salas** - Roteamento dinâmico por ID da sala
 - **Integração com Backend** - API REST para persistência de dados
 - **Validação de Formulários** - Validação client-side com Zod
@@ -49,7 +51,7 @@ Projeto desenvolvido durante o evento **NLW (Next Level Week)** da Rocketseat, f
 ### 🔄 Estados da Aplicação
 
 - **Gerenciamento de Estado** - TanStack Query para cache e sincronização
-- **Mutações Otimistas** - Atualização imediata da UI
+- **Mutações Otimistas** - Atualização imediata da UI ao criar perguntas
 - **Invalidação de Cache** - Sincronização automática após operações
 
 ## 📁 Estrutura do Projeto
@@ -61,14 +63,18 @@ src/
 │   ├── create-room-form.tsx
 │   ├── room-list.tsx
 │   ├── question-form.tsx
-│   └── question-item.tsx
+│   ├── question-item.tsx
+│   └── question-list.tsx
 ├── pages/              # Páginas da aplicação
 │   ├── create-rooms.tsx
-│   └── room.tsx
+│   ├── room.tsx
+│   └── record-room-audio.tsx
 ├── http/               # Camada de comunicação com API
 │   ├── types/          # Tipos TypeScript para API
 │   ├── use-create-room.ts
-│   └── use-rooms.ts
+│   ├── use-rooms.ts
+│   ├── use-create-question.ts
+│   └── use-room-questions.ts
 ├── lib/                # Utilitários e configurações
 └── main.tsx           # Ponto de entrada
 ```
@@ -118,6 +124,9 @@ npm run dev
 - **Endpoints**:
   - `GET /rooms` - Listar salas
   - `POST /rooms` - Criar sala
+  - `GET /rooms/:roomId/questions` - Listar perguntas da sala
+  - `POST /rooms/:roomId/questions` - Criar pergunta na sala
+  - `POST /rooms/:roomId/audio` - Enviar áudio para a sala
 
 ### Variáveis de Ambiente
 
@@ -125,6 +134,8 @@ Certifique-se de que o backend esteja rodando na porta 3333 ou ajuste as URLs no
 
 - `src/http/use-rooms.ts`
 - `src/http/use-create-room.ts`
+- `src/http/use-room-questions.ts`
+- `src/http/use-create-question.ts`
 
 ## 🎨 Padrões de Projeto
 
