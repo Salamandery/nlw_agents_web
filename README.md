@@ -1,127 +1,177 @@
 # NLW Agents
 
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.8.3-3178C6?style=for-the-badge&logo=typescript"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-4.1.11-06B6D4?style=for-the-badge&logo=tailwindcss"/>
+  <img src="https://img.shields.io/badge/Vite-7.0.4-646CFF?style=for-the-badge&logo=vite"/>
+  <img src="https://img.shields.io/badge/TanStack%20Query-5.83.0-FF4154?style=for-the-badge&logo=react-query"/>
+  <img src="https://img.shields.io/badge/React%20Router-7.6.3-CA4245?style=for-the-badge&logo=react-router"/>
+  <img src="https://img.shields.io/badge/Zod-4.0.5-3E54A3?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Biome-2.0.6-3B82F6?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Radix%20UI-2.1.7-8B5CF6?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Lucide%20React-0.525.0-00B2FF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/shadcn/ui-lightgrey?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Class%20Variance%20Authority-0.7.1-8B5CF6?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/React%20Hook%20Form-7.60.0-EC5990?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/@hookform/resolvers-5.1.1-EC5990?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Axios-lightgrey?style=for-the-badge&logo=axios"/>
+</p>
+
+<div align="center">
+  <b>🇧🇷 Português | <a href="#english-version">🇺🇸 English below</a></b>
+</div>
+
+---
+
+## 📑 Sumário | 📑 Table of Contents
+
+- [📖 Sobre o Projeto](#-sobre-o-projeto)
+- [📖 About the Project](#-about-the-project)
+- [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [🚀 Technologies Used](#-technologies-used)
+- [🎯 Funcionalidades](#-funcionalidades)
+- [🎯 Main Features](#-main-features)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [📁 Project Structure](#-project-structure)
+- [🛠️ Setup e Configuração](#️-setup-e-configuração)
+- [🛠️ Setup & Configuration](#️-setup--configuration)
+- [🎨 Padrões de Projeto](#-padrões-de-projeto)
+- [🎨 Project Patterns](#-project-patterns)
+- [📝 Licença](#-licença)
+- [📝 License](#-license)
+- [👨‍💻 Autor](#-autor)
+- [👨‍💻 Author](#-author)
+
+---
+
+## 📖 Sobre o Projeto
 Projeto desenvolvido durante o evento **NLW (Next Level Week)** da Rocketseat, focado em criar uma aplicação web moderna para criação de salas de perguntas e respostas com IA.
 
-## 🚀 Tecnologias Utilizadas
+## 📖 About the Project
+Project developed during **NLW (Next Level Week)** by Rocketseat, focused on building a modern web app for creating Q&A rooms with AI.
 
-### Core
+---
 
-- **React 19** - Biblioteca para construção de interfaces
-- **TypeScript** - Tipagem estática para JavaScript
-- **Vite** - Build tool e dev server
+## 🚀 Tecnologias Utilizadas | Technologies Used
 
-### UI/UX
+| **PT-BR** | **EN** |
+|-----------|--------|
+| **Core** | **Core** |
+| React 19 — Biblioteca para construção de interfaces | React 19 — Library for building interfaces |
+| TypeScript 5 — Tipagem estática para JavaScript | TypeScript 5 — Static typing for JavaScript |
+| Vite 7 — Build tool e dev server | Vite 7 — Build tool and dev server |
+| **UI/UX** | **UI/UX** |
+| Tailwind CSS 4 — Framework CSS utilitário | Tailwind CSS 4 — Utility-first CSS framework |
+| Radix UI — Componentes acessíveis | Radix UI — Accessible components |
+| Lucide React — Ícones | Lucide React — Icons |
+| Class Variance Authority — Gerenciamento de variantes de componentes | Class Variance Authority — Component variant management |
+| shadcn/ui — Biblioteca de componentes | shadcn/ui — Component library |
+| **Estado e Roteamento** | **State and Routing** |
+| TanStack Query — Gerenciamento de estado e cache | TanStack Query — State and cache management |
+| React Router DOM — Roteamento da aplicação | React Router DOM — Application routing |
+| **Formulários e Validação** | **Forms and Validation** |
+| React Hook Form — Gerenciamento de formulários | React Hook Form — Form management |
+| Zod — Validação de schemas | Zod — Schema validation |
+| @hookform/resolvers — Integração entre React Hook Form e Zod | @hookform/resolvers — Integration between React Hook Form and Zod |
+| **Ferramentas de Desenvolvimento** | **Development Tools** |
+| Biome — Linter e formatter | Biome — Linter and formatter |
+| Ultracite — Configuração de linting otimizada | Ultracite — Optimized linting configuration |
 
-- **Tailwind CSS 4** - Framework CSS utilitário
-- **Radix UI** - Componentes acessíveis
-- **Lucide React** - Ícones
-- **Class Variance Authority** - Gerenciamento de variantes de componentes
-- **shadcn/ui** - Biblioteca de componentes
-
-### Estado e Roteamento
-
-- **TanStack Query** - Gerenciamento de estado e cache
-- **React Router DOM** - Roteamento da aplicação
-
-### Formulários e Validação
-
-- **React Hook Form** - Gerenciamento de formulários
-- **Zod** - Validação de schemas
-- **@hookform/resolvers** - Integração entre React Hook Form e Zod
-
-### Ferramentas de Desenvolvimento
-
-- **Biome** - Linter e formatter
-- **Ultracite** - Configuração de linting otimizada
+---
 
 ## 🎯 Funcionalidades
+- Criação e listagem de salas
+- Sistema de perguntas e respostas com IA
+- Listagem dinâmica de perguntas
+- Gravação e envio de áudio
+- Navegação entre salas
+- Integração com backend REST
+- Validação de formulários
+- Interface responsiva
 
-### ✨ Features Principais
+## 🎯 Main Features
+- Create and list rooms
+- Q&A system with AI
+- Dynamic question listing
+- Audio recording and upload
+- Room navigation
+- REST backend integration
+- Form validation
+- Responsive interface
 
-- **Criação de Salas** - Interface para criar salas de perguntas
-- **Listagem de Salas** - Visualização de todas as salas criadas
-- **Sistema de Perguntas** - Formulário para enviar perguntas e receber respostas automáticas da IA
-- **Listagem dinâmica de perguntas** - Perguntas e respostas exibidas em tempo real por sala
-- **Gravação e envio de áudio** - Grave e envie áudios para a sala, integrando com o backend
-- **Navegação entre Salas** - Roteamento dinâmico por ID da sala
-- **Integração com Backend** - API REST para persistência de dados
-- **Validação de Formulários** - Validação client-side com Zod
-- **Interface Responsiva** - Design adaptável para diferentes dispositivos
-
-### 🔄 Estados da Aplicação
-
-- **Gerenciamento de Estado** - TanStack Query para cache e sincronização
-- **Mutações Otimistas** - Atualização imediata da UI ao criar perguntas
-- **Invalidação de Cache** - Sincronização automática após operações
+---
 
 ## 📁 Estrutura do Projeto
-
 ```
 src/
-├── components/          # Componentes reutilizáveis
-│   ├── ui/             # Componentes base (shadcn/ui)
+├── components/          # Reusable components
+│   ├── ui/             # Base components (shadcn/ui)
 │   ├── create-room-form.tsx
 │   ├── room-list.tsx
 │   ├── question-form.tsx
 │   ├── question-item.tsx
 │   └── question-list.tsx
-├── pages/              # Páginas da aplicação
+├── pages/              # Application pages
 │   ├── create-rooms.tsx
 │   ├── room.tsx
 │   └── record-room-audio.tsx
-├── http/               # Camada de comunicação com API
-│   ├── types/          # Tipos TypeScript para API
+├── http/               # API communication layer
+│   ├── types/          # TypeScript types for API
 │   ├── use-create-room.ts
 │   ├── use-rooms.ts
 │   ├── use-create-question.ts
 │   └── use-room-questions.ts
-├── lib/                # Utilitários e configurações
-└── main.tsx           # Ponto de entrada
+├── lib/                # Utilities and configs
+└── main.tsx           # Entry point
 ```
+
+## 📁 Project Structure
+```
+src/
+├── components/          # Reusable components
+│   ├── ui/             # Base components (shadcn/ui)
+│   ├── create-room-form.tsx
+│   ├── room-list.tsx
+│   ├── question-form.tsx
+│   ├── question-item.tsx
+│   └── question-list.tsx
+├── pages/              # Application pages
+│   ├── create-rooms.tsx
+│   ├── room.tsx
+│   └── record-room-audio.tsx
+├── http/               # API communication layer
+│   ├── types/          # TypeScript types for API
+│   ├── use-create-room.ts
+│   ├── use-rooms.ts
+│   ├── use-create-question.ts
+│   └── use-room-questions.ts
+├── lib/                # Utilities and configs
+└── main.tsx           # Entry point
+```
+
+---
 
 ## 🛠️ Setup e Configuração
-
 ### Pré-requisitos
-
-- Node.js (versão 18 ou superior)
+- Node.js (18+)
 - npm ou yarn
-- Backend API rodando em `http://localhost:3333`
+- Backend rodando em `http://localhost:3333`
 
 ### Instalação
-
 1. Clone o repositório
-
-```bash
-git clone <url-do-repositorio>
-cd nlw-agents
-```
-
-2. Instale as dependências
-
-```bash
-npm install
-```
-
-3. Execute o servidor de desenvolvimento
-
-```bash
-npm run dev
-```
-
-4. Acesse a aplicação em `http://localhost:5173`
+2. Instale as dependências (`npm install`)
+3. Execute o servidor de desenvolvimento (`npm run dev`)
+4. Acesse em `http://localhost:5173`
 
 ### Scripts Disponíveis
-
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Gera build de produção
-- `npm run preview` - Visualiza o build de produção
-
-## 🔧 Configurações Importantes
+- `npm run dev` - Desenvolvimento
+- `npm run build` - Build produção
+- `npm run preview` - Preview build
 
 ### API Backend
-
-- **URL Base**: `http://localhost:3333`
-- **Endpoints**:
+- Base: `http://localhost:3333`
+- Endpoints:
   - `GET /rooms` - Listar salas
   - `POST /rooms` - Criar sala
   - `GET /rooms/:roomId/questions` - Listar perguntas da sala
@@ -129,16 +179,40 @@ npm run dev
   - `POST /rooms/:roomId/audio` - Enviar áudio para a sala
 
 ### Variáveis de Ambiente
+- Ajuste URLs nos arquivos de `src/http/` se necessário.
 
-Certifique-se de que o backend esteja rodando na porta 3333 ou ajuste as URLs nos arquivos:
+## 🛠️ Setup & Configuration
+### Requirements
+- Node.js (18+)
+- npm or yarn
+- Backend running at `http://localhost:3333`
 
-- `src/http/use-rooms.ts`
-- `src/http/use-create-room.ts`
-- `src/http/use-room-questions.ts`
-- `src/http/use-create-question.ts`
+### Installation
+1. Clone the repository
+2. Install dependencies (`npm install`)
+3. Start dev server (`npm run dev`)
+4. Access at `http://localhost:5173`
+
+### Available Scripts
+- `npm run dev` - Development
+- `npm run build` - Production build
+- `npm run preview` - Preview build
+
+### Backend API
+- Base: `http://localhost:3333`
+- Endpoints:
+  - `GET /rooms` - List rooms
+  - `POST /rooms` - Create room
+  - `GET /rooms/:roomId/questions` - List questions in room
+  - `POST /rooms/:roomId/questions` - Create question in room
+  - `POST /rooms/:roomId/audio` - Send audio to room
+
+### Environment variables
+- Adjust URLs in `src/http/` files if needed.
+
+---
 
 ## 🎨 Padrões de Projeto
-
 - **Componentes**: Utiliza shadcn/ui para componentes base
 - **Arquitetura**: Separação clara entre componentes, páginas e lógica de negócio
 - **Formulários**: React Hook Form + Zod para validação robusta
@@ -148,7 +222,65 @@ Certifique-se de que o backend esteja rodando na porta 3333 ou ajuste as URLs no
 - **Linting**: Biome para formatação e linting de código
 - **Tipagem**: TypeScript rigoroso com tipos para API
 
-## 📝 Licença
+## 🎨 Project Patterns
+- **Components**: Uses shadcn/ui for base components
+- **Architecture**: Clear separation between components, pages, and business logic
+- **Forms**: React Hook Form + Zod for robust validation
+- **State**: TanStack Query for cache and synchronization
+- **Routing**: React Router with dynamic parameters
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Linting**: Biome for code formatting and linting
+- **Typing**: Strict TypeScript with API types
 
-Este projeto foi desenvolvido durante o evento NLW da Rocketseat.
-**Desenvolvido por:** Rodolfo M. F. Abreu
+---
+
+## 📝 Licença
+Projeto desenvolvido durante o evento NLW da Rocketseat.
+
+## 📝 License
+Project developed during Rocketseat's NLW event.
+
+---
+
+## 👨‍💻 Autor | Author
+
+**PT-BR:**
+
+<div align="center">
+
+**Rodolfo M. F. Abreu**  
+Desenvolvedor de software apaixonado por tecnologia, aprendizado contínuo e boas práticas de programação. Sempre em busca de novos desafios e oportunidades para colaborar em projetos inovadores.
+
+[![GitHub](https://img.shields.io/badge/GitHub-rodolfomfabreu-black?style=for-the-badge&logo=github)](https://github.com/salamandery)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rodolfo%20Abreu-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/rodolfo-marques-ferreira-de-abreu/)
+
+Sinta-se à vontade para entrar em contato para dúvidas, sugestões ou colaborações!
+
+</div>
+
+**EN:**
+
+<div align="center">
+
+**Rodolfo M. F. Abreu**  
+Software developer passionate about technology, continuous learning, and best programming practices. Always looking for new challenges and opportunities to collaborate on innovative projects.
+
+[![GitHub](https://img.shields.io/badge/GitHub-rodolfomfabreu-black?style=for-the-badge&logo=github)](https://github.com/salamandery)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rodolfo%20Abreu-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/rodolfo-marques-ferreira-de-abreu/)
+
+Feel free to get in touch for questions, suggestions, or collaborations!
+
+</div>
+
+---
+
+<div align="center">
+  <b>Feito com 💙 para estudos de Electron, Node.js e aplicações desktop multiplataforma.<br/>
+  Made with 💙 for Electron, Node.js and cross-platform desktop application studies.</b>
+</div>
+
+---
+
+<div align="center" id="english-version">
+  <b>🇺🇸 English version above | <a href="#top">🇧🇷 Versão em português acima</a></b>
+</div>
